@@ -1,6 +1,26 @@
-# full-stack-estate
+# Description
 
-### app
+Full stack practice
+
+## Structure
+
+```bash
+project-root
+├── api
+└──　client
+```
+
+## Development
+
+### Setup
+
+#### Server
+
+```bash
+$ cd api
+```
+
+and `console-ninja node --watch app.js` or `nodemon app.js`
 
 ```bash
 $ node app.js
@@ -13,6 +33,8 @@ $ nodemon app.js
 ```bash
 $ console-ninja node --watch app.js
 ```
+
+---
 
 ### ERD
 
