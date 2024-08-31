@@ -1,6 +1,6 @@
 # full-stack-estate
 
-#### app
+### app
 
 ```bash
 $ node app.js
@@ -13,6 +13,8 @@ $ nodemon app.js
 ```bash
 $ console-ninja node --watch app.js
 ```
+
+### ERD
 
 ```mermaid
 erDiagram
@@ -75,5 +77,15 @@ erDiagram
         Date        createdAt
     }
 
+    user ||--o{ chat : ""
+
+    message {
+        String      id PK
+        String      userId
+        String      chatId
+        Date        createdAt
+    }
+
+    chat ||--o{ message: ""
 
 ```
