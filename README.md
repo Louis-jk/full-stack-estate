@@ -111,3 +111,28 @@ erDiagram
     chat ||--o{ message: ""
 
 ```
+
+### Sequence
+
+```mermaid
+sequenceDiagram
+    participant M as MongoDB
+    participant P as Prisma
+    participant E as Express
+    participant R as React
+
+    loop CRUD
+        P->>M: Query Request (e.g., findMany, create)
+        M->>P: Query Response (Data or Success)
+
+        P->>M: Mutation Request (e.g., update, delete)
+        M->>P: Mutation Response (Success or Error)
+    end
+
+    E->>R: Response
+    R->>E: Request
+
+    E->>P: Query Request (e.g., findMany, create)
+    P->>E: Query Response (Data or Success)
+
+```
