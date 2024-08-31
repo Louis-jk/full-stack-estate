@@ -7,6 +7,8 @@ Full stack practice
 ```bash
 root
 ├── api
+│   ├── controller
+│   ├── routes
 └──　client
 ```
 
