@@ -5,7 +5,7 @@ Full stack practice
 ## Structure
 
 ```bash
-project-root
+root
 ├── api
 └──　client
 ```
