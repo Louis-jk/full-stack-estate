@@ -13,6 +13,7 @@ root
 ├── api
 │   ├── controller
 │   ├── lib
+│   ├── middleware
 │   ├── prisma
 │   └── routes
 └──　client
