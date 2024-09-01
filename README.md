@@ -45,11 +45,12 @@ $ console-ninja node --watch app.js
 ```mermaid
 erDiagram
     user {
-        String  id PK
-        String  username
-        String  email
-        String  avatar
-        Date    createdAt
+        String      id PK
+        String      username
+        String      email
+        String      password
+        String      avatar
+        Date        createdAt
     }
 
     post {
