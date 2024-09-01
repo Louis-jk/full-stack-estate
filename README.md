@@ -8,7 +8,9 @@ Full stack practice
 root
 ├── api
 │   ├── controller
-│   ├── routes
+│   ├── lib
+│   ├── prisma
+│   └── routes
 └──　client
 ```
 
