@@ -121,10 +121,10 @@ erDiagram
 
 ```mermaid
 sequenceDiagram
-    participant M as MongoDB
-    participant P as Prisma
-    participant E as Express
-    participant R as React
+    participant M as MongoDB<br />(db)
+    participant P as Prisma<br />(orm)
+    participant E as Express<br />(server)
+    participant R as React<br />(client)
 
     loop CRUD
         P->>M: Query Request (e.g., findMany, create)
