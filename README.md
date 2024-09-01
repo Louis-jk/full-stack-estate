@@ -128,16 +128,18 @@ sequenceDiagram
 
     loop CRUD
         P->>M: Query Request (e.g., findMany, create)
-        M->>P: Query Response (Data or Success)
+        M-->>P: Query Response (Data or Success)
 
         P->>M: Mutation Request (e.g., update, delete)
-        M->>P: Mutation Response (Success or Error)
+        M-->>P: Mutation Response (Success or Error)
     end
 
     E->>R: Response
+    Note left of R: cookie
     R->>E: Request
 
+
     E->>P: Query Request (e.g., findMany, create)
-    P->>E: Query Response (Data or Success)
+    P-->>E: Query Response (Data or Success)
 
 ```
