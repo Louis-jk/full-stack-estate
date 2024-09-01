@@ -2,6 +2,10 @@
 
 Full stack practice
 
+## Tech Stack
+
+Express, React, Prisma, MongoDB, Javascript
+
 ## Structure
 
 ```bash
