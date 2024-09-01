@@ -12,6 +12,11 @@ root
 │   ├── prisma
 │   └── routes
 └──　client
+    ├── public
+    └── src
+        ├── components
+        ├── lib
+        └── routes
 ```
 
 ## Development
