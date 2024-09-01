@@ -1,6 +1,6 @@
 # Description
 
-Full stack practice
+Full stack training
 
 ## Tech Stack
 
