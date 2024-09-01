@@ -36,7 +36,6 @@ export const login = async (req, res) => {
     if (!isPasswordValid)
       return res.status(400).json({ message: 'Invalid Credentials!' });
 
-    // const { ...userInfo } = user;
     // GENERATE COOKIE TOKEN AND SEND TO USER
     // res.setHeader('Set-Cookie', 'test=' + 'myValue').json('success');
 
@@ -50,6 +49,8 @@ export const login = async (req, res) => {
       { expiresIn: age }
     );
 
+    const { ...userInfo } = user;
+
     res
       .cookie('token', token, {
         httpOnly: true,
@@ -57,7 +58,7 @@ export const login = async (req, res) => {
         maxAge: age,
       })
       .status(200)
-      .json({ message: 'Login Successful!' });
+      .json(userInfo);
   } catch (err) {
     res.status(500).json({ message: 'Failed to login!' });
   }
