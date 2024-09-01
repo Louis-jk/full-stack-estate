@@ -123,8 +123,10 @@ erDiagram
 sequenceDiagram
     participant M as MongoDB<br />(db)
     participant P as Prisma<br />(orm)
+    participant W as Middleware<br />(check jwt)
     participant E as Express<br />(server)
     participant R as React<br />(client)
+
 
     loop CRUD
         P->>M: Query Request (e.g., findMany, create)
@@ -138,6 +140,10 @@ sequenceDiagram
     Note left of R: cookie
     R->>E: Request
 
+    loop Check JWT for the protected routes
+        E->>W: &nbsp;
+        W-->>E: &nbsp;
+    end
 
     E->>P: Query Request (e.g., findMany, create)
     P-->>E: Query Response (Data or Success)
