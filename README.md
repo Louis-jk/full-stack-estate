@@ -141,8 +141,8 @@ sequenceDiagram
     R->>E: Request
 
     loop Check JWT for the protected routes
-        E->>W: &nbsp;
-        W-->>E: &nbsp;
+        E->>W: Check JWT;
+        W-->>E: Protected routes;
     end
 
     E->>P: Query Request (e.g., findMany, create)
