@@ -19,9 +19,6 @@ root
 └──　client
     ├── public
     └── src
-        ├── components
-        ├── lib
-        └── routes
 ```
 
 ## Development
@@ -40,12 +37,30 @@ and `console-ninja node --watch app.js` or `nodemon app.js`
 $ node app.js
 ```
 
+or
+
 ```bash
 $ nodemon app.js
 ```
 
+or
+
 ```bash
 $ console-ninja node --watch app.js
+```
+
+---
+
+#### Client
+
+```bash
+$ npm run dev
+```
+
+or
+
+```bash
+$ yarn dev
 ```
 
 ---
